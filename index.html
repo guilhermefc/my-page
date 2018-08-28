@@ -1,122 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title>Guilherme Carneiro</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+  
+  <ul id="slide-out" class="sidenav sidenav-fixed">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="images/polygon-bg-grey-dark.webp">
       </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
-
+      <img class="circle" src="images/selfie4.jpg">
+      <span class="white-text name">Guilherme Ferreira Carneiro</span>
+      <span class="white-text email">Dev & Maker</span>
+    </div></li>
+    <li><a href="#about"><i class="material-icons">account_box</i>About</a></li>
+    <li><a href="#jobs"><i class="material-icons">web</i>Jobs</a></li>
+    <li><a href="#resume"><i class="material-icons">insert_drive_file</i>Resume / CV</a></li>
+    <li><a href="#" onclick="M.toast({html: 'Em breve, obrigado pelo interesse :)'})"><i class="material-icons">rss_feed</i>Blog</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Don't be shy, just say hi!</a></li>
+    <div style="margin-left: 10px">
+      <a href="https://www.linkedin.com/in/guilherme-carneiro/" target="_blank"><i class="fa  fa-linkedin  fa-2x" style="color:#000;" title="LinkedIn"></i></a>
+      <a href="http://twitter.com/guilherme_fc/" target="_blank"><i class="fa fa-twitter fa-2x" style="color:#000;" title="Twitter"></i></a>
+      <a href="https://www.instagra.com/guifc" target="_blank"><i class="fa fa-instagram fa-2x" style="color:#000;" title="Instagram"></i></a>
+      <a href="https://github.com/guilhermefc" target="_blank"><i class="fa fa-github fa-2x" style="color:#000;" title="Instagram"></i></a>
     </div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+    <p style=" font-size: 14px; margin-left: 30px">guilherme.f.carneiro@gmail.com</a>
+  </ul>
+  
+  <a href="#" style="position: absolute; z-index: 100;" data-target="slide-out" class="sidenav-trigger btn-floating  btn-large waves-effect waves-light grey"><i class="material-icons">menu</i></a>
+  
+  <main>
+  
+    <div id="about" class="parallax-container" class="center">
+      <div class="parallax">
+        <img src="images/bg2.jpg" style="width: 100%" height="100%">
+      </div>
+      <p class="center" style="text-align: justify;">Olá, eu desenvolvo apps que já impactaram mais de 1 mi de pessoas. Fundador do
+        <a href="https://web.archive.org/web/20180803233747/http://vizin.com.br/" target="_blank" class="span-link">Vizin</a> e da
+        <a class="span-link" target="_blank" href="https://web.archive.org/web/20161022081216/http://www.webksn.com.br/main/index.php">
+          KSN</a>, hoje trabalho na
+        <a class="span-link" target="_blank" href="https://www.gft.com/br/pt/index/">GFT</a>, onde junto a pessoas incríveis, entrego aplicativos nativo Android, híbrido e recentemente venho pesquisando
+        sobre Machine Learning e Realidade Aumentada. </p>
+    </div>
+  
+    <div id="jobs" class="section no-pad-bot" id="index-banner">
+      <div class="container">  
+        <br><br>
+        <h1 class="header center grey-text">Jobs</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Aqui você encontra os últimos projetos em que atuei</h5>
+        </div>
+        <div class="row">
+          <div class="col s12 m5">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/app-avon.webp" style="height: 450px;">
+                <a class="btn-floating halfway-fab waves-effect waves-light grey">
+                  <i class="material-icons">add</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <h5>Contact Center</h3>
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                    little markup to use effectively.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col s12 m5">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/app-tarjetas.webp" style="height: 450px;">
+                <a class="btn-floating halfway-fab waves-effect waves-light grey">
+                  <i class="material-icons">add</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <h5>Cartões</h3>
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                    little markup to use effectively.</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+        <div class="row">
+            <div class="col s12 m5">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/app-invests.webp" style="height: 450px;">
+                  <a class="btn-floating halfway-fab waves-effect waves-light grey">
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content">
+                  <h5>Investimentos</h3>
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                      little markup to use effectively.</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col s12 m5">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/app-mobk.webp" style="height: 450px;">
+                  <a class="btn-floating halfway-fab waves-effect waves-light grey">
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+                <div class="card-content">
+                  <h5>Mobile Banking</h3>
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                      little markup to use effectively.</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-  </div>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
+        <br>
+        <br>
+  
       </div>
     </div>
-    <div class="footer-copyright">
+  
+    <div id="resume" class="section no-pad-bot grey lighten-3" id="index-banner" style="padding-bottom: 40px">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        <br><br>
+        <h1 class="header center grey-text">Resume / CV</h1>
+        <object style="width: 100%" data="images/guilhermecarneiro-cv.png"></object>
       </div>
     </div>
-  </footer>
-
-
+  
+  
+    <footer class="page-footer orange">
+  
+      <spam class="center">See you! Made with
+        <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </spam>
+      <br><br>
+    </footer>
+  </main>
+  
+  
+  
+  
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  
+  
   </body>
-</html>
+  
+  </html>
