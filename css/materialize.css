@@ -2813,7 +2813,6 @@ video.responsive-video {
 }
 
 .parallax-container {
-  background:rgba(0,0,0,0.5);
   position: relative;
   overflow: hidden;
   height: 550px;
