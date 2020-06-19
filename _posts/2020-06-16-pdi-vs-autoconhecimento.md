@@ -1,7 +1,10 @@
 ---
 layout: post
 title: Plano de desenvolvimento vs. Autoconhecimento
+image: blog_01_desktop.jpg
+image_idp: idp_2020_06.png
 ---
+
 ##### **TL;DR** #####
 * \- _Este não é um artigo sobre top 5 ações para um plano de desenvolvimento perfeito._
 * \- _Este é um apanhado de inspirações abstratas que podem te ajudar a se inspirar._
@@ -36,3 +39,5 @@ Independentemente de como você vai seguir com seu plano de desenvolvimento, se 
 
 Sem mais delongas, e resguardadas as abstrações, abaixo está o meu plano de desenvolvimento para o primeiro semestre de 2020. Este plano é vivo e contínuo enquanto eu sentir que ele me atende. 
 
+
+![image](/images/{{ page.image_idp }})

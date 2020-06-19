@@ -1,25 +1,15 @@
 ---
-# front matter tells Jekyll to process Liquid
 layout: default
 ---
 
-<div id="about" class="parallax-window " style="height: 700px;" data-parallax="scroll"
-  data-image-src="images/citysky.jpg">
-  <p class="center" style="text-align: justify;">
-    Olá, desenvolvo aplicativos que já impactaram mais de um milhão de pessoas. Fundador do
-    <a href="https://web.archive.org/web/20180803233747/http://vizin.com.br/" target="_blank"
-      class="span-link">Vizin</a> e
-    <a class="span-link" target="_blank"
-      href="https://web.archive.org/web/20161022081216/http://www.webksn.com.br/main/index.php">
-      KSN,</a> hoje faço parte do <a class="span-link" target="_blank" href="https://ebanx.com">EBANX</a> e, com um time
-    incrível, entregamos aplicativos nativos e híbridos. Atualmente como líder de equipe de engenharia. </p>
-</div>
+{% include about.html %} 
+
 
 <div id="blog-posts" class="section no-pad">
 
   {% for post in site.posts %}
   <a href="{{ post.url }}">
-    <div class="parallax-window" data-parallax="scroll" data-image-src="images/bg1.jpg">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="images/{{ post.image }}">
       
       <h2 class="container center"
         style="color: white; font-weight: bold; height: inherit; padding-top: 200px; padding-bottom: 200px;">
@@ -30,133 +20,5 @@ layout: default
 
 </div>
 
-<div id="jobs" class="section no-pad-bot" id="index-banner">
-  <div class="container">
-    <br><br>
-    <h1 class="header center grey-text">Jobs</h1>
-    <div class="row center">
-      <h5 class="header col s12 light">Take a look at my most recent work</h5>
-    </div>
-    <div class="row">
-      <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/app-tarjetas.jpg" style="max-width: 100%; height: auto;">
-            <a class="btn-floating halfway-fab waves-effect waves-light grey">
-              <i class="material-icons">add</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <h5>Itaú Tarjetas</h3>
-              <h6>Android Tech Leader</h6>
-              <p>This was a very complex project, as the goal was to delivery a financial app, involving people from 4
-                countries, 3 agile squads,
-                2 consulting firms and a lot of requirements.</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/app-rchlo.jpg" style="max-width: 100%; height: auto;">
-            <a class="btn-floating halfway-fab waves-effect waves-light grey">
-              <i class="material-icons">add</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <h5>RCHLO Cards</h3>
-              <h6>Android Tech Leader</h6>
-              <p>Winner of “Gestão Private Label” at eFinance Conference 2017, and "Visa Award" in 2016 and 2017. RCHLO
-                and our dev team did a great job. <a href="http://www.midwayfinanceira.com.br/a-midway/premios">See
-                  details.</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/app-avon.png" style="max-width: 100%; height: auto;">
-            <a class="btn-floating halfway-fab waves-effect waves-light grey">
-              <i class="material-icons">add</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <h5>Avon Contact Center</h3>
-              <h6>Android Tech Leader</h6>
-              <p>This app is very recent and since day one is bringing value to the company, and helping customers to
-                fulfill their needs in the fastest and most comfortable way. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/app-abc.png" style="max-width: 100%; height: auto;">
-            <a class="btn-floating halfway-fab waves-effect waves-light grey">
-              <i class="material-icons">add</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <h5>ABC Investments</h3>
-              <h6>Android Tech Leader</h6>
-              <p>The challenge in this case was to develop a very large scope in a short time and with few resources.
-                Implementing Agile and with team extra effort it was delivered successfully.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/app-mobk.png" style="max-width: 100%; height: auto;">
-            <a class="btn-floating halfway-fab waves-effect waves-light grey">
-              <i class="material-icons">add</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <h5>Original Mobile Banking</h3>
-              <h6>Support analyst</h6>
-              <p>Original was the first bank to have its digital account opening in Brazil, besides this, I also
-                developed features of the Mobile Banking App. </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/app-vizin.png" style="max-width: 100%; height: auto;">
-            <a class="btn-floating halfway-fab waves-effect waves-light grey">
-              <i class="material-icons">add</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <h5>Vizin</h3>
-              <h6>Founder</h6>
-              <p>This is my son, it was 1.5 years of development, seeking partnerships, competing in contests and more
-                than 5,000 users who used to send alerts to their neighbors alerting about threats.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br>
-    <br>
-
-  </div>
-</div>
-<!--
-<div id="resume" class="section no-pad-bot grey lighten-3" id="index-banner" style="padding-bottom: 40px">
-  <div class="container">
-    <br><br>
-    <h1 class="header center grey-text">Resume / CV</h1>
-    <object style="width: 100%" data="images/guilhermecarneiro-cv.png"></object>
-  </div>
-</div>
--->
-<script src="/js/init.js"></script>
+{% include jobs.html %} 
