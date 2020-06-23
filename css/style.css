@@ -79,3 +79,16 @@ header, main, footer {
 .blog-box:hover {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
+
+.post-header {
+  margin: 0px auto;
+  display: block;
+  width: 100%;
+  /* max-width: 900px; */
+  height: 60vh;
+  /* margin-bottom: 3em; */
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center !important;
+}
