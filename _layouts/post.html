@@ -3,14 +3,13 @@ layout: default
 ---
 
 <div id="resume" class="section no-pad-bot grey lighten-3" id="index-banner" style="padding-bottom: 40px; padding-top: 0px;">
-    <div class="parallax-window blog-box" data-parallax="scroll" data-image-src="/images/{{page.image}}" ><p style="height: 100px;">oi</p></div>
+    <div class="post-header" style="background-image:url(/images/{{ page.image }});"> </div>
     <div class="container">
       <br><br>
       <h1 class="header center">{{ page.title }}</h1>
       <p class="center grey-text.text-darken-1">{{ page.date | date_to_string }}</p>
-      
+    
       <div style='text-align: justify; font-size: 22px;'> {{ content }} </div>
-
 
     </div>
   </div>
