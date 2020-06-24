@@ -3,16 +3,45 @@
 ---
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport". content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" . content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>Guilherme Carneiro</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  {% seo %}
+</head>
+
+<body>
+  <main>
+    {{ content }}
+  </main>
+  <footer class="page-footer orange">
+    <div class="container">
+      <span class="center">
+        <a href="/#about" class="span-link">Home</a> | <a href="/#blog-posts" class="span-link">Blogging</a> | <a
+          href="/#jobs" class="span-link">Jobs</a> |
+        <a href="http://twitter.com/guilherme_fc/" target="_blank"><i class="fa fa-twitter fa-2x" style="color:#fff;"
+            title="Twitter"></i></a>
+        <a href="https://www.linkedin.com/in/guilherme-carneiro/" target="_blank"><i class="fa  fa-linkedin  fa-2x"
+            style="color:#fff;" title="LinkedIn"></i></a>
+        <a href="https://www.instagram.com/guifc" target="_blank"><i class="fa fa-instagram fa-2x" style="color:#fff;"
+            title="Instagram"></i></a>
+        <a href="https://github.com/guilhermefc" target="_blank"><i class="fa fa-github fa-2x" style="color:#fff;"
+            title="Instagram"></i></a>
+      </span>
+      <br>
+      <span class="center">See you! Made with <a class="span-link" href="http://materializecss.com">Materialize</a> and
+        <a class="span-link" href="https://jekyllrb.com/">Jekyll</a>, hosted by <a class="span-link"
+          href="https://pages.github.com/">Github Pages ❤️</a></span>
+    </div>
+  </footer>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -24,58 +53,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124804642-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-124804642-1');
   </script>
-{% seo %}
-</head>
-<body>
-  
-  <ul id="slide-out" class="sidenav sidenav-fixed">
-    <li><div class="user-view">
-      <div class="background">
-        <img src="/images/bg-polygon-grey-dark.jpg">
-      </div>
-      <img class="circle" src="/images/gui_photo_circle.png">
-      <span class="white-text name">Gui Carneiro</span>
-      <span class="white-text email">Dev & Maker</span>
-    </div></li>
-    <li><a href="/#about"><i class="material-icons">account_box</i>Home</a></li>
-    <li><a href="/#blog-posts"><i class="material-icons">rss_feed</i>Blogging</a></li>
-    <li><a href="/#jobs"><i class="material-icons">web</i>Jobs</a></li>
-    <!--<li><a href="/#resume"><i class="material-icons">insert_drive_file</i>Resume / CV</a></li>-->
-    <li><div class="divider"></div></li>
-    <div style="margin-left: 10px">
-      <a href="http://twitter.com/guilherme_fc/" target="_blank"><i class="fa fa-twitter fa-2x" style="color:#000;" title="Twitter"></i></a>
-      <a href="https://www.linkedin.com/in/guilherme-carneiro/" target="_blank"><i class="fa  fa-linkedin  fa-2x" style="color:#000;" title="LinkedIn"></i></a>
-      <a href="https://www.instagram.com/guifc" target="_blank"><i class="fa fa-instagram fa-2x" style="color:#000;" title="Instagram"></i></a>
-      <a href="https://github.com/guilhermefc" target="_blank"><i class="fa fa-github fa-2x" style="color:#000;" title="Instagram"></i></a>
-    </div>
-  </ul>
-  <a href="#" style="position: fixed; z-index: 100;" data-target="slide-out" class="sidenav-trigger btn-floating  btn-large waves-effect waves-light grey"><i class="material-icons">menu</i></a>
-  
-  <main>
-    {{ content }}
-
-    
-  
-  
-    <footer class="page-footer orange">
-      <span class="center">   
-        <a href="/#about" class="span-link">Home</a> | <a href="/#blog-posts" class="span-link">Blogging</a> | <a href="/#jobs" class="span-link">Jobs</a> | 
-        <a href="http://twitter.com/guilherme_fc/" target="_blank"><i class="fa fa-twitter fa-2x" style="color:#fff;" title="Twitter"></i></a>
-        <a href="https://www.linkedin.com/in/guilherme-carneiro/" target="_blank"><i class="fa  fa-linkedin  fa-2x" style="color:#fff;" title="LinkedIn"></i></a>
-        <a href="https://www.instagram.com/guifc" target="_blank"><i class="fa fa-instagram fa-2x" style="color:#fff;" title="Instagram"></i></a>
-        <a href="https://github.com/guilhermefc" target="_blank"><i class="fa fa-github fa-2x" style="color:#fff;" title="Instagram"></i></a>
-      </span>
-      <br>
-      <span class="center">See you! Made with <a class="span-link" href="http://materializecss.com">Materialize</a> and <a class="span-link" href="https://jekyllrb.com/">Jekyll</a>, hosted by <a class="span-link" href="https://pages.github.com/">Github Pages ❤️</a></span>
-      <br><br>
-    </footer>
-  </main>
-  
 </body>
-  
+
 </html>

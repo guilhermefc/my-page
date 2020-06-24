@@ -17,10 +17,10 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
-
+/* 
 header, main, footer {
   padding-left: 300px;
-}
+} */
 
 @media only screen and (max-width : 992px) {
   header, main, footer {
@@ -30,28 +30,6 @@ header, main, footer {
 
 .h1, .h2, .h3, .h3, .h4 {
   font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.parallax-window p {
-  font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-size: 24px;
-  text-shadow: 0 0.05em 0 rgba(0,0,0,0.5);
-  z-index: 20;
-  max-width: 650px;
- 
-  font-weight: 200;
-  
-  position: relative;
-  float: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  margin-top: -25px;
-  
-  color: white;
-  
 }
 
 .span-link {
@@ -91,4 +69,50 @@ header, main, footer {
   position: relative;
   background-size: cover;
   background-position: center !important;
+}
+
+.parallax-window p {
+  font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 24px;
+  text-shadow: 0 0.05em 0 rgba(0,0,0,0.5);
+  padding-right: 24px;
+  padding-left: 24px;
+  font-weight: 200;
+  
+  color: white;
+  
+}
+
+.parallax-window .about {
+  font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 24px;
+  text-shadow: 0 0.05em 0 rgba(0,0,0,0.5);
+  z-index: 20;
+  max-width: 674px;
+  font-weight: 200;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -25px;
+  color: white;
+}
+
+.about img {
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 170px;
+}
+
+.social-links {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.social-links a{
+  flex: auto;
 }
