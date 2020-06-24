@@ -22,6 +22,10 @@ header, main, footer {
   padding-left: 300px;
 } */
 
+footer {
+  padding-bottom: 24px;
+}
+
 @media only screen and (max-width : 992px) {
   header, main, footer {
     padding-left: 0;
